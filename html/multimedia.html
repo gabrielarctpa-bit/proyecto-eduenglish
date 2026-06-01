@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multimedia — EduEnglish</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-mark">E</span>
+      <div class="logo-text">
+        <span class="logo-title">EduEnglish</span>
+        <span class="logo-sub">Academic Platform</span>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <span class="nav-label">Módulos</span>
+      <a href="/index.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Inicio
+      </a>
+      <a href="/html/contenidos.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Contenidos
+      </a>
+      <a href="/html/multimedia.html" class="nav-item active">
+        <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        Multimedia
+      </a>
+      <a href="/html/practicas.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Prácticas
+      </a>
+      <a href="/html/repositorio.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        Repositorio
+      </a>
+      <a href="/html/vocabulario.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Vocabulario
+      </a>
+    </nav>
+    <div class="sidebar-skills">
+      <span class="nav-label">Habilidades</span>
+      <div class="skill-badges">
+        <span class="badge badge-r">Reading</span>
+        <span class="badge badge-w">Writing</span>
+        <span class="badge badge-l">Listening</span>
+        <span class="badge badge-s">Speaking</span>
+      </div>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn"><span></span><span></span><span></span></button>
+    <span class="topbar-title">EduEnglish</span>
+    <div class="topbar-right"></div>
+  </header>
+
+  <main class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="/index.html">Inicio</a><span>/</span> Multimedia
+      </div>
+      <h1>Material <em>Multimedia</em></h1>
+      <p>Audios de listening y videos educativos organizados por tema y habilidad.</p>
+    </div>
+
+ 
+    <div class="tabs" data-group="media">
+      <button class="tab-btn active" data-tab="listening" data-group="media">🎧 Listening</button>
+      <button class="tab-btn" data-tab="videos" data-group="media">🎬 Videos</button>
+    </div>
+
+ 
+    <div class="tab-panel active" data-group="media" data-panel="listening" id="listening">
+
+      <div class="info-box tip">
+        <span class="ib-icon">💡</span>
+        <span>Para agregar un audio: coloca el archivo <code>.mp3</code> o <code>.wav</code> en la carpeta <code>assets/</code> y actualiza el atributo <code>src</code> en la etiqueta <code>&lt;source&gt;</code>.</span>
+      </div>
+
+      <div class="media-grid">
+
+    
+        <div class="media-card">
+          <div class="mc-header">
+            <div class="mc-thumb">🎧</div>
+            <div class="mc-info">
+              <h3>Título del Audio 1</h3>
+              <p>Listening Practice · Unit 1 · 0:00 min</p>
+            </div>
+          </div>
+          <p class="mc-desc">
+            Descripción breve del audio: tema, nivel, tipo de ejercicio. Ej: "Conversación entre dos estudiantes sobre hábitos de estudio."
+          </p>
+          <div class="audio-player">
+            <div class="ap-controls">
+              <button class="ap-play-btn" aria-label="Reproducir">▶</button>
+              <div class="ap-timeline">
+                <input type="range" class="ap-progress" value="0" min="0" max="100" step="0.1" />
+                <div class="ap-time">
+                  <span class="ap-current">0:00</span>
+                  <span class="ap-duration">0:00</span>
+                </div>
+              </div>
+              <input type="range" class="ap-volume" value="80" min="0" max="100" title="Volumen" />
+            </div>
+            
+            <audio class="ap-source" preload="metadata">
+              <source src="../assets/audio-1.mp3" type="audio/mpeg" />
+              Tu navegador no soporta audio HTML5.
+            </audio>
+          </div>
+        </div>
+
+      
+        <div class="media-card">
+          <div class="mc-header">
+            <div class="mc-thumb">🎧</div>
+            <div class="mc-info">
+              <h3>Título del Audio 2</h3>
+              <p>Listening Practice · Unit 2 · 0:00 min</p>
+            </div>
+          </div>
+          <p class="mc-desc">
+            Descripción del segundo audio. Reemplaza este texto con la descripción real del ejercicio de listening.
+          </p>
+          <div class="audio-player">
+            <div class="ap-controls">
+              <button class="ap-play-btn" aria-label="Reproducir">▶</button>
+              <div class="ap-timeline">
+                <input type="range" class="ap-progress" value="0" min="0" max="100" step="0.1" />
+                <div class="ap-time">
+                  <span class="ap-current">0:00</span>
+                  <span class="ap-duration">0:00</span>
+                </div>
+              </div>
+              <input type="range" class="ap-volume" value="80" min="0" max="100" title="Volumen" />
+            </div>
+            <!-- 🔧 CAMBIAR src -->
+            <audio class="ap-source" preload="metadata">
+              <source src="../assets/audio-2.mp3" type="audio/mpeg" />
+              Tu navegador no soporta audio HTML5.
+            </audio>
+          </div>
+        </div>
+
+    
+        <div class="media-card">
+          <div class="mc-header">
+            <div class="mc-thumb">🎧</div>
+            <div class="mc-info">
+              <h3>Título del Audio 3</h3>
+              <p>Listening Practice · Unit 3 · 0:00 min</p>
+            </div>
+          </div>
+          <p class="mc-desc">
+            Descripción del tercer audio. Reemplaza con tu contenido real.
+          </p>
+          <div class="audio-player">
+            <div class="ap-controls">
+              <button class="ap-play-btn" aria-label="Reproducir">▶</button>
+              <div class="ap-timeline">
+                <input type="range" class="ap-progress" value="0" min="0" max="100" step="0.1" />
+                <div class="ap-time">
+                  <span class="ap-current">0:00</span>
+                  <span class="ap-duration">0:00</span>
+                </div>
+              </div>
+              <input type="range" class="ap-volume" value="80" min="0" max="100" title="Volumen" />
+            </div>
+          
+            <audio class="ap-source" preload="metadata">
+              <source src="../assets/audio-3.mp3" type="audio/mpeg" />
+              
+            </audio>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  
+    <div class="tab-panel" data-group="media" data-panel="videos" id="speaking">
+
+      <div class="info-box tip">
+        <span class="ib-icon">💡</span>
+        <span>Para incrustar un video de YouTube: ve al video → Compartir → Insertar. Copia la URL del iframe (ej: <code>https://www.youtube.com/embed/VIDEO_ID</code>) y pégala en el atributo <code>src</code> del iframe. Para videos locales, usa la etiqueta <code>&lt;video&gt;</code>.</span>
+      </div>
+
+      <div class="media-grid">
+
+     
+        <div class="media-card">
+          <div class="mc-header">
+            <div class="mc-thumb">🎬</div>
+            <div class="mc-info">
+              <h3>Título del Video 1</h3>
+              <p>Video educativo · Speaking / Pronunciation</p>
+            </div>
+          </div>
+          <p class="mc-desc">
+            Descripción breve del video. Ej: "Pronunciación de las vocales largas en inglés americano."
+          </p>
+         
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/watch?v=WR9_nsLyaEY&list=PLd9hCvj34W5it4a-RMzhlwNJ-edf5HU3Q&index=2"
+              title="Video 1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+
+        </div>
+
+   
+        <div class="media-card">
+          <div class="mc-header">
+            <div class="mc-thumb">🎬</div>
+            <div class="mc-info">
+              <h3>Título del Video 2</h3>
+              <p>Video educativo · Listening Comprehension</p>
+            </div>
+          </div>
+          <p class="mc-desc">
+            Descripción del segundo video. Reemplaza con tu contenido real.
+          </p>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/watch?v=hsAPJRWHu4U&list=PLcetZ6gSk96_DQhz4aXs_nJTgNegwoTs9"
+              title="Video 2"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+ 
+        <div class="media-card">
+          <div class="mc-header">
+            <div class="mc-thumb">🎬</div>
+            <div class="mc-info">
+              <h3>Título del Video 3</h3>
+              <p>Video educativo · Grammar</p>
+            </div>
+          </div>
+          <p class="mc-desc">
+            Descripción del tercer video. Reemplaza con tu contenido real.
+          </p>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/watch?v=8uj5U21CptQ"
+              title="Video 3"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </main>
+
+  <div class="sidebar-overlay" id="overlay"></div>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

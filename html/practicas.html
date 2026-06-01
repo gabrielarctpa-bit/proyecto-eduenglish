@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prácticas — EduEnglish</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-mark">E</span>
+      <div class="logo-text">
+        <span class="logo-title">EduEnglish</span>
+        <span class="logo-sub">Academic Platform</span>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <span class="nav-label">Módulos</span>
+      <a href="/index.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Inicio
+      </a>
+      <a href="/html/contenidos.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Contenidos
+      </a>
+      <a href="/html/multimedia.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        Multimedia
+      </a>
+      <a href="/html/practicas.html" class="nav-item active">
+        <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Prácticas
+      </a>
+      <a href="/html/repositorio.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        Repositorio
+      </a>
+      <a href="/html/vocabulario.html" class="nav-item">
+        <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Vocabulario
+      </a>
+    </nav>
+    <div class="sidebar-skills">
+      <span class="nav-label">Habilidades</span>
+      <div class="skill-badges">
+        <span class="badge badge-r">Reading</span>
+        <span class="badge badge-w">Writing</span>
+        <span class="badge badge-l">Listening</span>
+        <span class="badge badge-s">Speaking</span>
+      </div>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn"><span></span><span></span><span></span></button>
+    <span class="topbar-title">EduEnglish</span>
+    <div class="topbar-right"></div>
+  </header>
+
+  <main class="main-content">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="../index.html">Inicio</a><span>/</span> Prácticas
+      </div>
+      <h1>Prácticas <em>Interactivas</em></h1>
+      <p>Cuestionarios de selección única y ejercicios de completar texto para evaluar tu aprendizaje.</p>
+    </div>
+
+
+    <div class="tabs" data-group="practicas">
+      <button class="tab-btn active" data-tab="multiple" data-group="practicas">📝 Selección Única</button>
+      <button class="tab-btn" data-tab="fill" data-group="practicas">✏️ Completar Texto</button>
+    </div>
+
+    
+    <div class="tab-panel active" data-group="practicas" data-panel="multiple">
+
+      <div data-quiz-set="set-multiple">
+        <div class="quiz-score-bar">
+          <div>
+            <div class="qs-label">Puntuación</div>
+            <div class="qs-score">0/0</div>
+            <div class="qs-sub">0 respondidas</div>
+          </div>
+          <button class="btn btn-ghost btn-sm btn-reset-quiz" style="margin-left:auto">↺ Reiniciar</button>
+        </div>
+
+
+
+  
+        <div class="quiz-card" data-quiz-type="multiple">
+          <div class="quiz-num">Pregunta 01</div>
+          <h3>Escribe aquí tu primera pregunta de selección única en inglés o español.</h3>
+          <div class="options-list">
+            <button class="option-btn" data-correct="false">
+              <span class="option-letter">A</span> Opción A — reemplaza con tu respuesta
+            </button>
+            <button class="option-btn" data-correct="true">
+              <span class="option-letter">B</span> Opción B — esta es la correcta (data-correct="true")
+            </button>
+            <button class="option-btn" data-correct="false">
+              <span class="option-letter">C</span> Opción C — reemplaza con tu respuesta
+            </button>
+            <button class="option-btn" data-correct="false">
+              <span class="option-letter">D</span> Opción D — reemplaza con tu respuesta
+            </button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+   
+        <div class="quiz-card" data-quiz-type="multiple">
+          <div class="quiz-num">Pregunta 02</div>
+          <h3>Escribe aquí tu segunda pregunta. Puede ser de comprensión lectora, vocabulario o gramática.</h3>
+          <div class="options-list">
+            <button class="option-btn" data-correct="false">
+              <span class="option-letter">A</span> Primera opción de respuesta
+            </button>
+            <button class="option-btn" data-correct="false">
+              <span class="option-letter">B</span> Segunda opción de respuesta
+            </button>
+            <button class="option-btn" data-correct="true">
+              <span class="option-letter">C</span> Tercera opción (correcta) — data-correct="true"
+            </button>
+            <button class="option-btn" data-correct="false">
+              <span class="option-letter">D</span> Cuarta opción de respuesta
+            </button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+  
+        <div class="quiz-card" data-quiz-type="multiple">
+          <div class="quiz-num">Pregunta 03</div>
+          <h3>Tercera pregunta de práctica. Reemplaza con tu contenido real.</h3>
+          <div class="options-list">
+            <button class="option-btn" data-correct="true">
+              <span class="option-letter">A</span> Respuesta correcta — data-correct="true"
+            </button>
+            <button class="option-btn" data-correct="false">
+              <span class="option-letter">B</span> Opción incorrecta B
+            </button>
+            <button class="option-btn" data-correct="false">
+              <span class="option-letter">C</span> Opción incorrecta C
+            </button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+
+      </div>
+    </div>
+
+    
+    <div class="tab-panel" data-group="practicas" data-panel="fill">
+
+      
+      <div data-quiz-set="set-fill">
+        <div class="quiz-score-bar">
+          <div>
+            <div class="qs-label">Puntuación</div>
+            <div class="qs-score">0/0</div>
+            <div class="qs-sub">0 respondidas</div>
+          </div>
+          <button class="btn btn-ghost btn-sm btn-reset-quiz" style="margin-left:auto">↺ Reiniciar</button>
+        </div>
+
+
+       
+        <div class="quiz-card" data-quiz-type="fill">
+          <div class="quiz-num">Ejercicio 01</div>
+          <h3>Complete the sentence with the correct word:</h3>
+          <div class="fill-blank">
+            <p class="sentence">
+              "She ________ to the library every day to study for her exams."
+            </p>
+           
+            <input
+              class="blank-input"
+              type="text"
+              placeholder="Escribe tu respuesta..."
+              data-answer="goes"
+            />
+          </div>
+          <div class="quiz-feedback"></div>
+          <button class="btn-sm btn-gold btn-verify" style="margin-top:0.75rem">Verificar →</button>
+        </div>
+
+  
+        <div class="quiz-card" data-quiz-type="fill">
+          <div class="quiz-num">Ejercicio 02</div>
+          <h3>Fill in the blank with the correct preposition:</h3>
+          <div class="fill-blank">
+            <p class="sentence">
+              "He is interested ________ learning new languages and cultures."
+            </p>
+           
+            <input
+              class="blank-input"
+              type="text"
+              placeholder="Escribe tu respuesta..."
+              data-answer="in"
+            />
+          </div>
+          <div class="quiz-feedback"></div>
+          <button class="btn-sm btn-gold btn-verify" style="margin-top:0.75rem">Verificar →</button>
+        </div>
+
+   
+        <div class="quiz-card" data-quiz-type="fill">
+          <div class="quiz-num">Ejercicio 03</div>
+          <h3>Choose the correct verb tense to complete the sentence:</h3>
+          <div class="fill-blank">
+            <p class="sentence">
+              "By next year, they ________ (complete) the research project."
+            </p>
+        
+            <input
+              class="blank-input"
+              type="text"
+              placeholder="Escribe tu respuesta..."
+              data-answer="will have completed"
+            />
+          </div>
+          <div class="quiz-feedback"></div>
+          <button class="btn-sm btn-gold btn-verify" style="margin-top:0.75rem">Verificar →</button>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </main>
+
+  <div class="sidebar-overlay" id="overlay"></div>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
