@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Multimedia — EduEnglish</title>
   <link rel="stylesheet" href="/css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     </div>
     <nav class="sidebar-nav">
       <span class="nav-label">Módulos</span>
-      <a href="/html/index.html" class="nav-item">
+      <a href="/index.html" class="nav-item">
         <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         Inicio
       </a>
@@ -79,24 +79,22 @@
  
     <div class="tab-panel active" data-group="media" data-panel="listening" id="listening">
 
-      <div class="info-box tip">
-        <span class="ib-icon">💡</span>
-        <span>Para agregar un audio: coloca el archivo <code>.mp3</code> o <code>.wav</code> en la carpeta <code>assets/</code> y actualiza el atributo <code>src</code> en la etiqueta <code>&lt;source&gt;</code>.</span>
-      </div>
+    
 
       <div class="media-grid">
 
     
         <div class="media-card">
           <div class="mc-header">
-            <div class="mc-thumb">🎧</div>
+            <div class="mc-thumb">🎧</div>  
             <div class="mc-info">
-              <h3>Título del Audio 1</h3>
-              <p>Listening Practice · Unit 1 · 0:00 min</p>
+              <h3>Daily Routines and Habits</h3>
+              <p>Listening Practice · Unit 1 · 2:30 min</p>
             </div>
           </div>
           <p class="mc-desc">
-            Descripción breve del audio: tema, nivel, tipo de ejercicio. Ej: "Conversación entre dos estudiantes sobre hábitos de estudio."
+            A short conversation between two students comparing their study habits and daily routines. Listen for
+            frequency adverbs (always, usually, sometimes, never).
           </p>
           <div class="audio-player">
             <div class="ap-controls">
@@ -123,12 +121,13 @@
           <div class="mc-header">
             <div class="mc-thumb">🎧</div>
             <div class="mc-info">
-              <h3>Título del Audio 2</h3>
-              <p>Listening Practice · Unit 2 · 0:00 min</p>
+              <h3>Ordering Food at a Restaurant</h3>
+              <p>Listening Practice · Unit 2 · 3:10 min</p>
             </div>
           </div>
           <p class="mc-desc">
-            Descripción del segundo audio. Reemplaza este texto con la descripción real del ejercicio de listening.
+            A dialogue between a waiter and a customer. Practice listening for polite requests and useful
+            restaurant vocabulary such as "Could I have...", "I'd like...", and "the bill, please".
           </p>
           <div class="audio-player">
             <div class="ap-controls">
@@ -155,12 +154,13 @@
           <div class="mc-header">
             <div class="mc-thumb">🎧</div>
             <div class="mc-info">
-              <h3>Título del Audio 3</h3>
-              <p>Listening Practice · Unit 3 · 0:00 min</p>
+              <h3>A Job Interview</h3>
+              <p>Listening Practice · Unit 3 · 4:00 min</p>
             </div>
           </div>
           <p class="mc-desc">
-            Descripción del tercer audio. Reemplaza con tu contenido real.
+            Listen to a mock job interview and identify the questions the interviewer asks about experience,
+            strengths, and career goals. Great practice for formal, professional English.
           </p>
           <div class="audio-player">
             <div class="ap-controls">
@@ -190,10 +190,7 @@
   
     <div class="tab-panel" data-group="media" data-panel="videos" id="speaking">
 
-      <div class="info-box tip">
-        <span class="ib-icon">💡</span>
-        <span>Para incrustar un video de YouTube: ve al video → Compartir → Insertar. Copia la URL del iframe (ej: <code>https://www.youtube.com/embed/VIDEO_ID</code>) y pégala en el atributo <code>src</code> del iframe. Para videos locales, usa la etiqueta <code>&lt;video&gt;</code>.</span>
-      </div>
+  
 
       <div class="media-grid">
 
@@ -202,17 +199,18 @@
           <div class="mc-header">
             <div class="mc-thumb">🎬</div>
             <div class="mc-info">
-              <h3>Título del Video 1</h3>
+              <h3>Let's Learn English</h3>
               <p>Video educativo · Speaking / Pronunciation</p>
             </div>
           </div>
           <p class="mc-desc">
-            Descripción breve del video. Ej: "Pronunciación de las vocales largas en inglés americano."
+            Episode from VOA's "Let's Learn English" series, designed for beginner and intermediate students who
+            want to practice listening and speaking with clear, slow American English.
           </p>
          
           <div class="video-wrapper">
             <iframe
-              src="https://www.youtube.com/watch?v=WR9_nsLyaEY&list=PLd9hCvj34W5it4a-RMzhlwNJ-edf5HU3Q&index=2"
+              src="https://www.youtube.com/embed/WR9_nsLyaEY?list=PLd9hCvj34W5it4a-RMzhlwNJ-edf5HU3Q"
               title="Video 1"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -227,16 +225,16 @@
           <div class="mc-header">
             <div class="mc-thumb">🎬</div>
             <div class="mc-info">
-              <h3>Título del Video 2</h3>
+              <h3>Listening Comprehension Practice</h3>
               <p>Video educativo · Listening Comprehension</p>
             </div>
           </div>
           <p class="mc-desc">
-            Descripción del segundo video. Reemplaza con tu contenido real.
+            A short video exercise to practice listening comprehension. Watch once for the general idea, then again to catch specific details.
           </p>
           <div class="video-wrapper">
             <iframe
-              src="https://www.youtube.com/watch?v=hsAPJRWHu4U&list=PLcetZ6gSk96_DQhz4aXs_nJTgNegwoTs9"
+              src="https://www.youtube.com/embed/hsAPJRWHu4U?list=PLcetZ6gSk96_DQhz4aXs_nJTgNegwoTs9"
               title="Video 2"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -250,16 +248,16 @@
           <div class="mc-header">
             <div class="mc-thumb">🎬</div>
             <div class="mc-info">
-              <h3>Título del Video 3</h3>
+              <h3>Grammar in Context</h3>
               <p>Video educativo · Grammar</p>
             </div>
           </div>
           <p class="mc-desc">
-            Descripción del tercer video. Reemplaza con tu contenido real.
+            A short grammar lesson explaining a key structure with real examples. Pay attention to how the rule is used in natural speech.
           </p>
           <div class="video-wrapper">
             <iframe
-              src="https://www.youtube.com/watch?v=8uj5U21CptQ"
+              src="https://www.youtube.com/embed/8uj5U21CptQ"
               title="Video 3"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
